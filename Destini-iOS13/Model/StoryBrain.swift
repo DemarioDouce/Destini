@@ -47,18 +47,22 @@ struct StoryBrain {
         )
     ]
     
+    //Get the title within the array
     func getStoryTitle() -> String {
         return stories[storyNumber].title
     }
     
+    //Get choice1 within the array
     func getChoice1() -> String {
         return stories[storyNumber].choice1
     }
     
+    //Get choice2 within the array
     func getChoice2() -> String {
         return stories[storyNumber].choice2
     }
     
+    //Decide which question to go to next.
     mutating func nextStory(userChoice: String) {
         
         let currentStory = stories[storyNumber]
