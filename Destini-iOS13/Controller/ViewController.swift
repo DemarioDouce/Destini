@@ -10,12 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    //UI Elements
     @IBOutlet weak var storyLabel: UILabel!
     @IBOutlet weak var choice1Button: UIButton!
     @IBOutlet weak var choice2Button: UIButton!
     
+    //Init StoryBrain()
     var storyBrain = StoryBrain()
     
+    //Run on startup
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,8 +27,11 @@ class ViewController: UIViewController {
 
     }
 
+    
+    // button function
     @IBAction func choiceSelection(_ sender: UIButton) {
-        
+       
+        //Using method in storyBrain.
         storyBrain.nextStory(userChoice: sender.currentTitle!)
         
         updateUI()
@@ -35,7 +42,7 @@ class ViewController: UIViewController {
     
     
     
-    
+    //Update the UI elements
     func updateUI() {
         
         storyLabel.text = storyBrain.getStoryTitle()
