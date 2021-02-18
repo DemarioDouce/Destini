@@ -1,6 +1,6 @@
 # Destini
 ---
 ## Screenshot
-![Destini mockup image.](/Mockups/MockupDestini.png)
+![Mockup image.](/Mockups/MockupDestini.png)
 ---
 
